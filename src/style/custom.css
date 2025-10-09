@@ -1,0 +1,4 @@
+.task-item:hover {
+    background-color: #e7e7e7;
+    transition: 0.3s;
+}
