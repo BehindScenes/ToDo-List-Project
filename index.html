@@ -19,25 +19,30 @@
 
 <body>
     <section class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-        <div class="col-5">
+        <div class="fixed-top m-3">
+            <button class="btn btn-dark" id="themeController" onclick="handleClick()">
+                <!-- SWITCHER ICON -->
+            </button>
+        </div>
+        <div class="col-12 col-lg-5">
             <div class="card border-0 rounded-0">
                 <div class="card-body">
                     <p class="card-title text-center fs-3">To-Do List</p>
                     <hr>
                     <div class="row">
                         <div class="input-group">
-                            <input type="text" class="form-control border-dark shadow" placeholder="New Task...."
+                            <input type="text" class="form-control shadow" placeholder="New Task...."
                                 aria-label="New Task" id="newTask">
                             <button class="btn btn-dark shadow" id="addTask">Add <i class="bi bi-plus-lg"></i></button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-group mt-2">
-                            <span class="input-group-text border-dark shadow">Date</span>
-                            <input type="date" class="form-control border-dark shadow" id="dateInput">
-                            <span class="input-group-text border-dark shadow border-end-0 bg-white"><i
-                                    class="bi bi-circle-fill text-success" id="circleColor"></i></span>
-                            <select class="form-select border-dark shadow border-start-0" id="colorSelect">
+                            <span class="input-group-text shadow">Date</span>
+                            <input type="date" class="form-control shadow" id="dateInput">
+                            <span class="input-group-text shadow border-end-0"><i class="bi bi-circle-fill text-success"
+                                    id="circleColor"></i></span>
+                            <select class="form-select shadow border-start-0" id="colorSelect">
                                 <option value="success" class="text-success">Green</option>
                                 <option value="danger" class="text-danger">Red</option>
                                 <option value="primary" class="text-primary">Blue</option>
@@ -48,8 +53,8 @@
                     </div>
                     <div class="row">
                         <div class="input-group mt-2">
-                            <span class="input-group-text border-dark shadow">Category</span>
-                            <select class="form-select border-dark shadow" id="Category">
+                            <span class="input-group-text  shadow">Category</span>
+                            <select class="form-select shadow" id="Category">
                                 <option value="work">💼 Work</option>
                                 <option value="personal" selected>🏠 Personal</option>
                                 <option value="study">📚 Study</option>
@@ -74,7 +79,7 @@
                     <div id="alertBox">
                         <!-- Alert -->
                     </div>
-                    <div class="mt-3 p-2 border border-dark rounded shadow"
+                    <div class="mt-3 p-2 border  rounded shadow"
                         style="min-height: 250px; max-height: 250px; overflow-y: auto;" id="tasksContainer">
                         <!-- Tasks -->
                     </div>
